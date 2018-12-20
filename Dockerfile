@@ -19,6 +19,7 @@ RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  #&& mv /v2raybin/v2ray-v$VER-linux-64/geosite.dat /v2raybin/ \
  && mv /v2raytmp_111/geosite.dat /v2raybin/ \
  && chmod +x /v2raybin/v2ray \
+ && chmod +x /v2raybin/v2ctl \
  && rm -rf v2ray.zip \
  #&& rm -rf v2ray-v$VER-linux-64 \
  && cd /v2raybin \
